@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,700;1,900&display=swap');
+ /*Navbar*/
+.navbar {
+    background-color: var(--primary-color);
+    height: 90px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) ;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+
+.navbar ul{
+   display: flex;
+}
+
+.navbar a{
+    color: white;
+    font-weight: 600;
+    padding: 10px; 
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px black solid;
+}
+
+/*Show-case Erne*/
+.container-erne{
+    justify-content: space-between;
+}
+.container-erne .erne{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-erne .erne h1
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+.container-erne .erne span:nth-child(3),
+.container-erne .erne span:nth-child(4){
+    font-size: 30px;
+}
+.container-erne .erne span:nth-child(1){
+    transform: rotate(-40deg);
+    position: relative;
+    top: 30px;
+    right: 20px;
+    color: red;
+}
+/*Forms styling*/
+.login-signupform{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: flex-start;
+    height: 450px;
+    width: 400px;
+    background-color: #e9eaea;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+}
+.toggle{
+    height: 35px;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.signup-form,.login-form{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+.form-control{
+    display: flex;
+    /* border: 2px solid yellow; */
+    justify-content: center;
+    margin: 10px;
+}
+.login,.signup{
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.forgot{
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+input[type='submit']{
+    display: inline-block;
+    
+}
+input[type='text'],
+input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    font-size: 16px;
+}
+
+.btn-google,.btn-github,.btn-discord{
+    padding: 8px;
+}
+/*Features*/
+/*Section -1*/
+/* .f1 .img-content , .f2 .img-content {
+    display:  flex;
+    margin: 30px 0;
+    z-index: 1;
+    height: 100%;
+    flex-wrap: wrap;
+} */
+
+.f1 .img-content .imgback
+{
+    background-image: url("/images/lens-5-screenshot.png"),var(--gradient-color);
+}
+
+.f1 .img-content .content,
+.f2 .img-content .content
+{
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width: 30%;
+}
+
+.content h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*Section -2*/
+.sec-2{
+    background-color: #fff;
+}
+.f2 .img-content .imgback{
+    background-image: url("/images/screenshot-terminal.png"),var(--gradient-color);
+}
+/*Section -3*/
+.f3 .img-content .imgback{
+    background-image: url("/images/screenshot-extensions.png"),var(--gradient-color);
+    background-position: -750px  30px,top left;
+}
+
+.sec-3{
+    height: 800px;
+}
+.sec-3::before{
+    transform: skewY(2.8deg);
+}
+.sec-3::after{
+    transform: skewY(2.8deg);
+}
+
+.btn-download{
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.footer{
+    flex-direction: column;
+   margin-bottom: 20px;
+}
+.social{
+    z-index: 1;
+}
+.social a {
+    padding: 8px;
+}
+
+
